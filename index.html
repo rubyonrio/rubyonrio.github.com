@@ -1,14 +1,57 @@
 ---
 layout: default
 title: Ruby on Rio
+
+address: DTM - Travessa do Ouvidor, 17 - 501, Centro, Rio de Janeiro
+events:
+  -
+    day: 15
+    month: Fevereiro
+    status: "next"
+  -
+    day: 15
+    month: Março
+    status: "future"
+  -
+    day: 19
+    month: Abril
+    status: "future"
+  -
+    day: 17
+    month: Maio
+    status: "future"
+  -
+    day: 21
+    month: Junho
+    status: "future"
+  -
+    day: 19
+    month: Julho
+    status: "future"
+  -
+    day: 20
+    month: Setembro
+    status: "future"
+  -
+    day: 18
+    month: Outubro
+    status: "future"
+  -
+    day: 20
+    month: Dezembro
+    status: "future"
 ---
 
 
 <section class="centralized">
   <article class="next-meetup">
     <h2>Próximo Encontro: </h2>
-    <p><i class="icon-time icon-white"></i> Sábado, 15 de Junho de 2013 às 10:00 hs</p>
-    <p><i class="icon-map-marker icon-white"></i> 21212, Rua Voluntários da Pátria, 286 - sala 303 - Botafogo.</p>
+    <p><i class="icon-map-marker icon-white"></i>{{ page.address }}</p>
+    {% for event in page.events %}
+      {% if event.status == "next" %}
+        <p><i class="icon-time icon-white"></i>Sábado, {{ event.day }} de {{ event.month }} de 2014  às 13:00 ~ 18:00</p>
+      {% endif %}
+    {% endfor %}
   </article>
 
   <article class="about">
@@ -21,4 +64,15 @@ title: Ruby on Rio
     <p>Realizamos encontros presencias mensalmente. Nesses encontros, fazemos apresentações, codificamos aplicações e projetos open source, regamos a muito bate papo sobre Ruby e outras tecnologias.</p>
     <p>Para acompanhar o que acontece na Ruby on Rio, <a href="https://groups.google.com/forum/?fromgroupsrubyonrio#!forum/rubyonrio">faça parte da lista de discução</a>.</p>
   </article>
+
+  <article class="next-meetup">
+    <h2>Encontros futuros: </h2>
+    <p><i class="icon-map-marker icon-white"></i>{{ page.address }}</p>
+    {% for event in page.events %}
+      {% if event.status == "future" %}
+        <p><i class="icon-time icon-white"></i>Sábado, {{ event.day }} de {{ event.month }} de 2013  às 13:00 ~ 18:00</p>
+        {% endif %}
+    {% endfor %}
+  </article>
+
 </section>
