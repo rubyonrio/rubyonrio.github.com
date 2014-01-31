@@ -1,19 +1,35 @@
 /*
-Syntax error: Invalid CSS after "  }": expected "}", was ""
-        on line 190 of /Users/aluisioazevedo/Projects/rubyonrio.github.com/sass/main.scss
+Syntax error: File to import not found or unreadable: bourbon/bourbon.
+              Load paths:
+                /Users/aluisioazevedo/Projects/rubyonrio.github.com/sass
+                /Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                /Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 2 of /Users/aluisioazevedo/Projects/rubyonrio.github.com/sass/core.scss
+
+1: /Users/aluisioazevedo/Projects/rubyonrio.github.com/sass/core.scss
 
 Backtrace:
-/Users/aluisioazevedo/Projects/rubyonrio.github.com/sass/main.scss:190
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/scss/parser.rb:1147:in `expected'
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/scss/parser.rb:1085:in `expected'
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/scss/parser.rb:1080:in `tok!'
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/scss/parser.rb:536:in `block'
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/scss/parser.rb:529:in `ruleset'
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/scss/parser.rb:553:in `block_child'
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/scss/parser.rb:546:in `block_contents'
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/scss/parser.rb:27:in `parse'
-/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/engine.rb:342:in `_to_tree'
+/Users/aluisioazevedo/Projects/rubyonrio.github.com/sass/core.scss:2
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/import_node.rb:45:in `import'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/tree/root_node.rb:20:in `render'
 /Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/engine.rb:315:in `_render'
 /Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/sass-3.2.13/lib/sass/engine.rb:262:in `render'
 /Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
@@ -63,4 +79,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  }\": expected \"}\", was \"\"\A         on line 190 of /Users/aluisioazevedo/Projects/rubyonrio.github.com/sass/main.scss"; }
+  content: "Syntax error: File to import not found or unreadable: bourbon/bourbon.\A               Load paths:\A                 /Users/aluisioazevedo/Projects/rubyonrio.github.com/sass\A                 /Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/aluisioazevedo/.rvm/gems/ruby-2.1.0@rubyonrio/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /Users/aluisioazevedo/Projects/rubyonrio.github.com/sass/core.scss\A \A 1: /Users/aluisioazevedo/Projects/rubyonrio.github.com/sass/core.scss"; }

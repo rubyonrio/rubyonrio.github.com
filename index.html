@@ -42,37 +42,67 @@ events:
     status: "future"
 ---
 
+<div class="wrap">
+  <section class="hero">
+    <article class="intro-about">
+      <h2>Welcome to the Ruby on Rio meetup.</h2>
+    </article>
+    <article class="next-meetup">
+      <h2>Next Mettup</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </article>
+  </section>
 
-<section class="centralized">
-  <article class="next-meetup">
-    <h2>Próximo Encontro: </h2>
-    <p><i class="icon-map-marker icon-white"></i>{{ page.address }}</p>
-    {% for event in page.events %}
-      {% if event.status == "next" %}
-        <p><i class="icon-time icon-white"></i>Sábado, {{ event.day }} de {{ event.month }} de 2014  às 13:00 ~ 18:00</p>
-      {% endif %}
-    {% endfor %}
-  </article>
+  <section class="infos">
+    <article class="about-us">
+      <h3>About</h3>
+      <p>
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod.
+      </p>
+      <p>
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod.
+      </p>
+      <button>Read more</button>
+    </article>
+    <article class="last-meetup">
+      <h3>Last Meting</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <button>Check it out</button>
+    </article>
+  </section>
 
-  <article class="about">
-    <h2>Bem vindo ao site do Ruby on Rio</h2>
+  <section class="avatars">  </section>
 
-    <p>O Ruby on Rio é o grupo de usuários de Ruby do Rio de Janeiro. O grupo nasceu como forma de unir desenvolvedores e pessoas interessadas na linguagem de programação Ruby.</p>
-    <p>No grupo falamos sobre Ruby, Rails e outras tecnologias relacionadas. O grupo funciona como um meio para aproximar pessoas para de troca de conhecimento, seja para aprender ou ensinar Ruby e seu vasto ecossistema de frameworks, bibliotecas e aplicações.</p>
+  <section class="others-meetups">
+    <article class="last-posts">
+      <h3>Last Meetups</h3>
+      <ul>
+        <li>
+          <h4>Meetup at He:labs</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <button>Read</button>
+        </li>
+        <li>
+          <h4>Meetup at He:labs</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <button>Read</button>
+        </li>
+        <li>
+          <h4>Meetup at He:labs</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <button>Read</button>
+        </li>
+      </ul>
+    </article>
 
-    <h2>Encontros presenciais</h2>
-    <p>Realizamos encontros presencias mensalmente. Nesses encontros, fazemos apresentações, codificamos aplicações e projetos open source, regamos a muito bate papo sobre Ruby e outras tecnologias.</p>
-    <p>Para acompanhar o que acontece na Ruby on Rio, <a href="https://groups.google.com/forum/?fromgroupsrubyonrio#!forum/rubyonrio">faça parte da lista de discução</a>.</p>
-  </article>
+    <article class="next-posts">
+      <h3>Next Meetups</h3>
+      <p>DTM - Travessa do Ouvidor, 17 - 501, Centro, Rio de Janeiro</p>
+      <p>DTM - Travessa do Ouvidor, 17 - 501, Centro, Rio de Janeiro</p>
+      <p>DTM - Travessa do Ouvidor, 17 - 501, Centro, Rio de Janeiro</p>
+    </article>
+  </section>
+</div>
 
-  <article class="next-meetup">
-    <h2>Encontros futuros: </h2>
-    <p><i class="icon-map-marker icon-white"></i>{{ page.address }}</p>
-    {% for event in page.events %}
-      {% if event.status == "future" %}
-        <p><i class="icon-time icon-white"></i>Sábado, {{ event.day }} de {{ event.month }} de 2014  às 13:00 ~ 18:00</p>
-        {% endif %}
-    {% endfor %}
-  </article>
-
-</section>
+<br><br><br><br><br><br><br>
