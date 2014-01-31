@@ -1,3 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'jekyll',     '1.0.3'
+gem 'github-pages', '14'
+gem 'bourbon',      '3.1.8'
+gem 'neat',         '1.5.0'
