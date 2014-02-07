@@ -1,5 +1,7 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Tauri|ABeeZee:400,400italic|Nunito:400,300,700|Scada:400italic,700italic,400,700|Actor|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700|Merriweather:400,400italic,300,700);
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -31,8 +33,10 @@ html { font-size: 62.5%; }
 body {
   background: #f3f3f3;
   vertical-align: baseline;
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(71, 60, 60);
+  color: #7a7a7a;
+  color: #5f5f5f;
   font-family: 'Tauri', sans-serif;
   font-family: 'ABeeZee', sans-serif;
   font-family: 'Open Sans', sans-serif;
@@ -42,8 +46,6 @@ p { margin:0 0 20px 0; }
 label { cursor:pointer; }
 img { border:none; }
 
-a { color: red; }
-span.red { color: #b20000; }
 
 
 
@@ -59,9 +61,13 @@ span.red { color: #b20000; }
 
 header {
   background: #fff;
-  height: 100px;
-  border-top: 1px solid #efefef;
+  height: 80px;
+  // border-top: 1px solid #efefef;
+  border-bottom: 1px solid #e8e8e8;
 
+  img {
+    margin-top: 20px;
+  }
   nav {
     float: right;
     width: 200px;
@@ -76,52 +82,110 @@ section.hero {
   margin-top: 40px;
   color: #fff;
   background: #ff3333;
+  border-radius: 3px;
 
   article {
-    padding: 40px;
-    height: 280px;
+    padding: 40px 30px;
+    height: 300px;
   }
 
   article.intro-about {
     width: 60%;
     float: left;
+    background: url("/img/pattern3.png");
+    h2 {
+      font-size: 3.2em;
+      font-weight: 500;
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.6em;
+      padding-top: 30px;
+      letter-spacing: 0.02em;
+    }
   }
 
   article.next-meetup {
     width: 40%;
     float: left;
-    background: #f32929;
+
+    // background: #ff3333 url("/img/ping.png");
+    border-left: 1px solid #F02424;
+    padding: 40px;
+
+    h2 {
+
+      font-size: 2em;
+      text-align: center;
+      font-weight: 500;
+      font-family: 'Raleway', sans-serif;
+
+      letter-spacing: 0.02em;
+    }
+
+    p {
+      font-size: 1.3em;
+    }
   }
 }
 
 section.infos {
   overflow: auto;
-  margin-top: 60px;
+  margin: 50px 0;
+  height: auto;
+  height: 400px;
+
+
 
   article {
-    padding: 20px;
+    padding: 0px 20px;
 
     h3 {
-      color: #f32929;
+      color: #ff3333;
       margin-bottom: 20px;
-      font-size: 1.8em;
+      font-size: 2em;
+      font-weight: 500;
+      font-family: 'Raleway', sans-serif;
+
+      letter-spacing: 0.02em;
     }
 
     p {
-      font-size: 1.2em;
-      line-height: 1.8em;
+      font-size: 1.3em;
+      line-height: 1.9em;
     }
   }
 
   article.about-us {
     width: 60%;
     float: left;
+
+    p {
+      width: 95%;
+    }
   }
 
   article.last-meetup {
     width: 40%;
-    padding: 40px;
+    background: #fff;
+    border-bottom: 2px solid #e8e8e8;
     float: left;
+    border-radius: 3px;
+    padding:40px 30px 40px;
+    overflow: auto;
+
+    p {
+      color: #747474;
+      font-size: 1.2em;
+    }
+
+
+    a.b {
+      text-align: center;
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      padding: 13px 0;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -130,6 +194,21 @@ button {
   color: #fff;
   border: none;
   padding: 10px 30px;
+}
+
+a.b {
+  background: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.15em;
+  padding: 10px 35px 10px;
+  text-decoration: none;
+  font-family: 'Tauri', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #df1515;
 }
 
 section.avatars {
@@ -148,39 +227,116 @@ section.avatars {
   }
 }
 
-section.others-meetups {
-  margin-top: 100px;
+
+
+section.meetings{
   overflow: auto;
+  height: 800px;
 
-  article {
-    width: 50%;
+  h3 {
+    color: #ff3333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+
+    letter-spacing: 0.02em;
+  }
+
+  article.last-meetings {
+    padding: 30px 0 20px;
     float: left;
-
-    h3 {
-      color: #f32929;
-      margin-bottom: 20px;
-      font-size: 1.8em;
-    }
-
-    p {
-      font-size: 1.2em;
-      line-height: 1.8em;
-    }
+    width: 60%;
 
     ul {
+      margin-top: 50px;
       li {
-        margin-bottom: 30px;
-        background: rgba(243, 41, 41, 0.05);
-        padding: 20px;
+        margin-bottom: 80px;
+        h4 {
+          // color: #ff3333;
+          margin-bottom: 20px;
+          font-size: 1.5em;
+          font-weight: 600;
+          font-family: 'Raleway', sans-serif;
+
+          letter-spacing: 0.02em;
+        }
+
+        p {
+          font-size: 1.3em;
+          line-height: 1.9em;
+          width: 85%;
+        }
       }
     }
   }
 
-  article.last-posts {
-    width: 60%;
-  }
+  // article {
 
-  article.next-posts {
+  //   h3 {
+  //     color: #ff3333;
+  //     margin-bottom: 20px;
+  //     font-size: 2em;
+  //     font-weight: 500;
+  //     font-family: 'Raleway', sans-serif;
+
+  //     letter-spacing: 0.02em;
+  //   }
+
+  //   p {
+  //     font-size: 1.3em;
+  //     line-height: 1.9em;
+  //   }
+  // }
+
+  aside.next-meetings {
+    float: left;
     width: 40%;
+    background: #fff;
+    border-bottom: 2px solid #e8e8e8;
+    border-radius: 3px;
+    padding:40px 30px 40px;
+    overflow: auto;
+
+    ul {
+      margin-top: 40px;
+
+      li {
+        padding: 30px 0 20px;
+        border-bottom: 1px dashed #e8e8e8;
+
+        i.fa {
+          float: left;
+          font-size: 1.6em;
+          width: 35px;
+          color: #d1d1d1;
+        }
+
+        p {
+          margin-bottom: 10px;
+        }
+      }
+
+      li:first-child {padding-top: 0;}
+      li:last-child {border-bottom:none;}
+    }
+
+
+    p {
+      color: #747474;
+      font-size: 1.2em;
+    }
+
+
+    a.b {
+      text-align: center;
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      padding: 13px 0;
+      margin-top: 30px;
+    }
   }
 }
+
+
