@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Tauri|ABeeZee:400,400italic|Nunito:400,300,700|Scada:400italic,700italic,400,700|Actor|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700|Merriweather:400,400italic,300,700);
+
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -34,11 +34,7 @@ body {
   background: #f3f3f3;
   vertical-align: baseline;
   font-size: 12px;
-  color: rgb(71, 60, 60);
-  color: #7a7a7a;
   color: #5f5f5f;
-  font-family: 'Tauri', sans-serif;
-  font-family: 'ABeeZee', sans-serif;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -62,12 +58,12 @@ img { border:none; }
 header {
   background: #fff;
   height: 80px;
-  // border-top: 1px solid #efefef;
   border-bottom: 1px solid #e8e8e8;
 
   img {
     margin-top: 20px;
   }
+
   nav {
     float: right;
     width: 200px;
@@ -106,19 +102,35 @@ section.hero {
   article.next-meetup {
     width: 40%;
     float: left;
-
-    // background: #ff3333 url("/img/ping.png");
     border-left: 1px solid #F02424;
-    padding: 40px;
+    padding: 30px 0;
 
-    h2 {
+    h1 {
 
       font-size: 2em;
-      text-align: center;
       font-weight: 500;
       font-family: 'Raleway', sans-serif;
 
       letter-spacing: 0.02em;
+    }
+
+    .go {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 80px;
+      padding-left: 20px;
+    }
+
+    i.fa {
+      float: left;
+      font-size: 1.8em;
+      width: 35px;
+      color: #fff;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.4em;
     }
 
     p {
@@ -129,11 +141,9 @@ section.hero {
 
 section.infos {
   overflow: auto;
-  margin: 50px 0;
+  margin: 60px 0;
   height: auto;
-  height: 400px;
-
-
+  height: 360px;
 
   article {
     padding: 0px 20px;
@@ -144,7 +154,6 @@ section.infos {
       font-size: 2em;
       font-weight: 500;
       font-family: 'Raleway', sans-serif;
-
       letter-spacing: 0.02em;
     }
 
@@ -189,12 +198,7 @@ section.infos {
   }
 }
 
-button {
-  background: #ff3333;
-  color: #fff;
-  border: none;
-  padding: 10px 30px;
-}
+
 
 a.b {
   background: #ff3333;
@@ -212,26 +216,26 @@ a.b {
 }
 
 section.avatars {
-  background: url("/img/galera.png");
-  height: 344px;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+  background: #e8e8e8;
+  padding: 5px 0;
+  background-clip: cover;
 
-  h4 {
-    text-align: center;
-    color: rgba(243, 41, 41, 0.8);
-    padding-top: 100px;
-    font-size: 3.6em;
-    font-weight: 900;
-    width: 80%;
-    margin: auto;
+  article {
+    background: url("/img/galera.png");
+    height: 290px;
+    background-clip: cover;
   }
+
 }
 
 
 
 section.meetings{
   overflow: auto;
-  height: 800px;
+  height: 700px;
+  margin-top: 70px;
 
   h3 {
     color: #ff3333;
@@ -249,7 +253,7 @@ section.meetings{
     width: 60%;
 
     ul {
-      margin-top: 50px;
+      margin-top: 40px;
       li {
         margin-bottom: 80px;
         h4 {
@@ -270,24 +274,6 @@ section.meetings{
       }
     }
   }
-
-  // article {
-
-  //   h3 {
-  //     color: #ff3333;
-  //     margin-bottom: 20px;
-  //     font-size: 2em;
-  //     font-weight: 500;
-  //     font-family: 'Raleway', sans-serif;
-
-  //     letter-spacing: 0.02em;
-  //   }
-
-  //   p {
-  //     font-size: 1.3em;
-  //     line-height: 1.9em;
-  //   }
-  // }
 
   aside.next-meetings {
     float: left;
@@ -338,5 +324,35 @@ section.meetings{
     }
   }
 }
+
+
+footer {
+  background: #fff;
+  text-align: center;
+  color: #fff;
+  padding: 0px 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+
+.ribbon {
+  width: 360px;
+  border-radius: 2px 0 0 2px;
+  font-size: 20px!important;
+  background: #fff;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+}
+.ribbon h1 {
+  font-size:18px!important;
+  color: #FF3333;
+  margin:0px;
+  padding: 15px 20px;
+}
+
+
+
+
+
 
 
