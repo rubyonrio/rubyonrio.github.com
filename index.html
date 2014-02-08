@@ -40,6 +40,10 @@ events:
     day: 20
     month: Dezembro
     status: "future"
+event_address: DTM - Travessa do Ouvidor, 17/501, Centro, Rio de Janeiro
+event_hours: 13:00 às 18:00
+next_event:
+  day: Sabado, 15 de Fevereiro de 2014
 ---
 
 <div class="wrap">
@@ -51,11 +55,11 @@ events:
       <div class="ribbon"><div class="ribbon-stitches-top"></div><strong class="ribbon-content"><h1>Próximo Encontro</h1></strong><div class="ribbon-stitches-bottom"></div></div>
       <div class="go">
         <i class="fa fa-calendar-o"></i>
-        <p>Sabado, 15 de Março de 2014</p>
+        <p>{{ page.next_event.day }}</p>
         <i class="fa fa-clock-o"></i>
         <p> 13:00 - 18:00<p>
         <i class="fa fa-map-marker"></i>
-        <p>DTM - Travessa do Ouvidor, 17 501, Centro</p>
+        <p>{{ page.event_address }}</p>
       </div>
     </article>
   </section>
