@@ -40,6 +40,8 @@ a.b {
   letter-spacing: 0.04em;
   text-decoration: none;
   color: #fff;
+
+  &:hover { background: #F02424; }
 }
 
 *, *:before, *:after {
@@ -48,21 +50,16 @@ a.b {
   box-sizing: border-box;
 }
 
-
-
-
-
-
-/* ====================*/
-
-.wrap {
-  width: 80%;
-  max-width: 1200px;
+.containner {
+  width: 980px;
   margin: auto;
 }
 
-header {
 
+/* ============================================*/
+
+
+header {
   background: #fff;
   height: 80px;
   border-bottom: 1px solid #e8e8e8;
@@ -79,179 +76,141 @@ header {
   }
 }
 
-
-section.hero {
+.hero {
   overflow: auto;
   margin-top: 40px;
-  color: #fff;
   background: #ff3333;
   border-radius: 3px;
+  color: #fff;
 
-  article {
-    padding: 40px 30px;
+  section.intro, article.next-meetup {
     height: 300px;
+    float: left;
   }
 
-  article.intro-about {
+  section.intro {
     width: 60%;
-    float: left;
+    padding: 40px 30px;
     background: url("/img/pattern3.png");
-    h2 {
-      font-size: 3.2em;
-      font-weight: 500;
 
-      line-height: 1.6em;
+    h2 {
       padding-top: 30px;
+      font-weight: 500;
+      font-size: 3.2em;
+      line-height: 1.6em;
       letter-spacing: 0.02em;
     }
   }
 
   article.next-meetup {
     width: 40%;
-    float: left;
-    border-left: 1px solid #F02424;
     padding: 30px 0;
+    border-left: 1px solid #F02424;
 
-    h1 {
-
-      font-size: 2em;
-      font-weight: 500;
-      font-family: 'Raleway', sans-serif;
-
-      letter-spacing: 0.02em;
+    .title {
+      h2 {
+        width: 90%;
+        float: right;
+        padding: 15px 20px;
+        border-radius: 2px 0 0 2px;
+        background: #fff;
+        text-align: left;
+        font-size: 1.6em;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: #FF3333;
+      }
     }
 
-    .go {
-      width: 80%;
-      margin: 0 auto;
-      margin-top: 80px;
-      padding-left: 20px;
-    }
+    .schedule {
+      width: 70%;
+      margin: 80px auto 0;
 
-    i.fa {
-      float: left;
-      font-size: 1.8em;
-      width: 35px;
-      color: #fff;
-    }
+      i.fa {
+        float: left;
+        width: 30px;
+        height: 40px;
+        padding-top: 3px;
+        font-size: 1.7em;
+      }
 
-    p {
-      margin-bottom: 20px;
-      line-height: 1.4em;
-    }
-
-    p {
-      font-size: 1.3em;
+      p {
+        font-size: 1.2em;
+        line-height: 1.6em;
+        margin-bottom: 20px;
+      }
     }
   }
 }
 
 section.infos {
   overflow: auto;
-  margin: 60px 0;
-  height: auto;
-  height: 360px;
+  margin-top: 60px;
 
-  article {
-    padding: 0px 20px;
-
-    h3 {
-      color: #ff3333;
-      margin-bottom: 20px;
-      font-size: 2em;
-      font-weight: 500;
-      font-family: 'Raleway', sans-serif;
-      letter-spacing: 0.02em;
-    }
-
-    p {
-      font-size: 1.3em;
-      line-height: 1.9em;
-    }
+  h3 {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #ff3333;
   }
 
-  article.about-us {
+  p {
+    font-size: 1.3em;
+    line-height: 1.9em;
+  }
+
+  article.about-group {
     width: 60%;
     float: left;
+    padding: 0 20px;
 
     p {
       width: 95%;
     }
   }
 
-  article.last-meetup {
+  aside.about-meetings {
     width: 40%;
+    padding:40px 30px 40px;
+    float: left;
     background: #fff;
     border-bottom: 2px solid #e8e8e8;
-    float: left;
     border-radius: 3px;
-    padding:40px 30px 40px;
-    overflow: auto;
 
     p {
       color: #747474;
       font-size: 1.2em;
     }
 
-
     a.b {
       text-align: center;
       display: block;
       width: 90%;
-      margin: 0 auto;
+      margin: 30px auto 0;
       padding: 13px 0;
-      margin-top: 30px;
     }
   }
 }
 
-
-
-a.b {
-  background: #ff3333;
-  color: #fff;
-  border: none;
-  border-radius: 2px;
-  font-size: 1.15em;
-  padding: 10px 35px 10px;
-  text-decoration: none;
-  font-family: 'Tauri', sans-serif;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  border-bottom: 1px solid #df1515;
+.avatars {
+  margin-top: 70px;
+  background: url("/img/galera.png");
+  height: 290px;
+  border-top: 5px solid #e8e8e8;
+  border-bottom: 5px solid #e8e8e8;
 }
-
-section.avatars {
-  margin: 0;
-  padding: 0;
-  background: #e8e8e8;
-  padding: 5px 0;
-  background-clip: cover;
-
-  article {
-    background: url("/img/galera.png");
-    height: 290px;
-    background-clip: cover;
-  }
-
-}
-
-
 
 section.meetings{
   overflow: auto;
-  height: 700px;
-  margin-top: 70px;
+  margin-top: 60px;
+  padding-bottom: 100px;
 
   h3 {
-    color: #ff3333;
     margin-bottom: 20px;
     font-size: 2em;
     font-weight: 500;
-    font-family: 'Raleway', sans-serif;
-
     letter-spacing: 0.02em;
+    color: #ff3333;
   }
 
   article.last-meetings {
@@ -261,15 +220,14 @@ section.meetings{
 
     ul {
       margin-top: 40px;
+
       li {
         margin-bottom: 80px;
+
         h4 {
-          // color: #ff3333;
           margin-bottom: 20px;
           font-size: 1.5em;
           font-weight: 600;
-          font-family: 'Raleway', sans-serif;
-
           letter-spacing: 0.02em;
         }
 
@@ -285,11 +243,10 @@ section.meetings{
   aside.next-meetings {
     float: left;
     width: 40%;
+    padding:40px 30px 40px;
     background: #fff;
     border-bottom: 2px solid #e8e8e8;
     border-radius: 3px;
-    padding:40px 30px 40px;
-    overflow: auto;
 
     ul {
       margin-top: 40px;
@@ -300,34 +257,21 @@ section.meetings{
 
         i.fa {
           float: left;
-          font-size: 1.6em;
+          font-size: 1.5em;
           width: 35px;
+          height: 30px;
           color: #d1d1d1;
         }
 
         p {
-          margin-bottom: 10px;
+          margin-bottom: 15px;
+          color: #747474;
+          font-size: 1.15em;
         }
       }
 
       li:first-child {padding-top: 0;}
       li:last-child {border-bottom:none;}
-    }
-
-
-    p {
-      color: #747474;
-      font-size: 1.2em;
-    }
-
-
-    a.b {
-      text-align: center;
-      display: block;
-      width: 90%;
-      margin: 0 auto;
-      padding: 13px 0;
-      margin-top: 30px;
     }
   }
 }
@@ -340,26 +284,3 @@ footer {
   padding: 0px 0;
   border-top: 1px solid #e8e8e8;
 }
-
-
-.ribbon {
-  width: 360px;
-  border-radius: 2px 0 0 2px;
-  font-size: 20px!important;
-  background: #fff;
-  float: right;
-  font-family: 'Raleway', sans-serif;
-}
-.ribbon h1 {
-  font-size:18px!important;
-  color: #FF3333;
-  margin:0px;
-  padding: 15px 20px;
-}
-
-
-
-
-
-
-

@@ -25,14 +25,15 @@ futute_events:
     day: Sábado, 20 de dezembro de 2014
 ---
 
-<div class="wrap">
-  <section class="hero">
-    <article class="intro-about">
+<div class="containner">
+  <div class="hero">
+    <section class="intro">
       <h2>Bem vindo ao site <br>do grupo Ruby on Rio.</h2>
-    </article>
+    </section>
+
     <article class="next-meetup">
-      <div class="ribbon"><div class="ribbon-stitches-top"></div><strong class="ribbon-content"><h1>Próximo Encontro</h1></strong><div class="ribbon-stitches-bottom"></div></div>
-      <div class="go">
+      <div class="title"><h2>Próximo Encontro</h2></div>
+      <div class="schedule">
         <i class="fa fa-calendar-o"></i>
         <p>{{ page.next_event.day }}</p>
         <i class="fa fa-clock-o"></i>
@@ -41,11 +42,14 @@ futute_events:
         <p>{{ page.event_address }}</p>
       </div>
     </article>
-  </section>
+  </div>
+</div>
 
+<div class="containner">
   <section class="infos">
-    <article class="about-us">
+    <article class="about-group">
       <h3>Sobre o Grupo</h3>
+      <br>
       <p>
         O Ruby on Rio é o grupo de usuários de Ruby do Rio de Janeiro. O grupo nasceu como forma de unir desenvolvedores e pessoas interessadas na linguagem de programação Ruby.
       </p>
@@ -54,21 +58,19 @@ futute_events:
       </p>
       <br>
       <a class="b" href="">Saiba Mais</a>
-
     </article>
-    <article class="last-meetup">
+
+    <aside class="about-meetings">
       <p>Realizamos encontros presencias mensalmente. Nesses encontros, fazemos apresentações, codificamos aplicações e projetos open source, regamos a muito bate papo sobre Ruby e outras tecnologias.</p>
       <p>Para acompanhar o que acontece na Ruby on Rio,</p>
       <a class="b" href="https://groups.google.com/forum/#!forum/rubyonrio">Faça parte da lista de discução</a>
-    </article>
+    </aside>
   </section>
 </div>
 
-<section class="avatars">
-  <article></article>
-</section>
+<div class="avatars"></div>
 
-<div class="wrap">
+<div class="containner">
   <section class="meetings">
     <article class="last-meetings">
       <h3>Últimos Encontros</h3>
@@ -103,5 +105,3 @@ futute_events:
     </aside>
   </section>
 </div>
-
-
