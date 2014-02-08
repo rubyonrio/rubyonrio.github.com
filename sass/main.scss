@@ -278,9 +278,26 @@ section.meetings{
 
 
 footer {
+  padding: 50px 0 20px;
+  overflow: auto;
   background: #fff;
-  text-align: center;
-  color: #fff;
-  padding: 0px 0;
   border-top: 1px solid #e8e8e8;
+  font-size: 1em;
+
+  a { color: #ff3333; }
+
+  .copy {
+    width: 50%;
+    float: left;
+  }
+
+  .support {
+    width: 50%;
+    float: left;
+    text-align: right;
+    margin-top: -10px;
+
+    img { margin-right: 50px; }
+    p { margin-top: 10px; }
+  }
 }
