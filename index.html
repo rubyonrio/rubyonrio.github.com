@@ -2,48 +2,27 @@
 layout: default
 title: Ruby on Rio
 
-address: DTM - Travessa do Ouvidor, 17 - 501, Centro, Rio de Janeiro
-events:
-  -
-    day: 15
-    month: Fevereiro
-    status: "next"
-  -
-    day: 15
-    month: Março
-    status: "future"
-  -
-    day: 19
-    month: Abril
-    status: "future"
-  -
-    day: 17
-    month: Maio
-    status: "future"
-  -
-    day: 21
-    month: Junho
-    status: "future"
-  -
-    day: 19
-    month: Julho
-    status: "future"
-  -
-    day: 20
-    month: Setembro
-    status: "future"
-  -
-    day: 18
-    month: Outubro
-    status: "future"
-  -
-    day: 20
-    month: Dezembro
-    status: "future"
 event_address: DTM - Travessa do Ouvidor, 17/501, Centro, Rio de Janeiro
 event_hours: 13:00 às 18:00
 next_event:
-  day: Sabado, 15 de Fevereiro de 2014
+  day: Sábado, 15 de Fevereiro de 2014
+futute_events:
+  -
+    day: "Sábado, 15 de Março de 2014"
+  -
+    day: "Sábado, 19 de Abril de 2014"
+  -
+    day: Sábado, 17 de Maio de 2014
+  -
+    day: Sábado, 21 de Junho de 2014
+  -
+    day: Sábado, 19 de Julho de 2014
+  -
+    day: Sábado, 20 de Setembro de 2014
+  -
+    day: Sábado, 18 de Outubro de 2014
+  -
+    day: Sábado, 20 de dezembro de 2014
 ---
 
 <div class="wrap">
@@ -57,7 +36,7 @@ next_event:
         <i class="fa fa-calendar-o"></i>
         <p>{{ page.next_event.day }}</p>
         <i class="fa fa-clock-o"></i>
-        <p> 13:00 - 18:00<p>
+        <p>{{ page.event_hours }}<p>
         <i class="fa fa-map-marker"></i>
         <p>{{ page.event_address }}</p>
       </div>
@@ -110,30 +89,16 @@ next_event:
     <aside class="next-meetings">
       <h3>Encontros Futuros</h3>
       <ul>
+        {% for event in page.futute_events limit:3 %}
         <li>
           <i class="fa fa-calendar-o"></i>
-          <p>Sabado, 15 de Março de 2014</p>
+          <p>{{ event.day }}</p>
           <i class="fa fa-clock-o"></i>
-          <p> 13:00 - 18:00<p>
+          <p>{{ page.event_hours }}<p>
           <i class="fa fa-map-marker"></i>
-          <p>DTM - Travessa do Ouvidor, 17 - 501, Centro</p>
+          <p>{{ page.event_address }}</p>
         </li>
-        <li>
-          <i class="fa fa-calendar-o"></i>
-          <p>Sabado, 15 de Março de 2014</p>
-          <i class="fa fa-clock-o"></i>
-          <p> 13:00 - 18:00<p>
-          <i class="fa fa-map-marker"></i>
-          <p>DTM - Travessa do Ouvidor, 17 - 501, Centro</p>
-        </li>
-        <li>
-          <i class="fa fa-calendar-o"></i>
-          <p>Sabado, 15 de Março de 2014</p>
-          <i class="fa fa-clock-o"></i>
-          <p> 13:00 - 18:00<p>
-          <i class="fa fa-map-marker"></i>
-          <p>DTM - Travessa do Ouvidor, 17 - 501, Centro</p>
-        </li>
+        {% endfor %}
       </ul>
     </aside>
   </section>
