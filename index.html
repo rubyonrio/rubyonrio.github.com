@@ -90,23 +90,16 @@ events:
     <article class="last-meetings">
       <h3>Últimos Encontros</h3>
       <ul>
-        <li>
-          <h4>Pellentesque Bibendum Fermentum</h4>
-          <p>
-            Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue...
-          </p>
-          <br>
-          <a class="b" href="">Saiba Mais</a>
-        </li>
-
-        <li>
-          <h4>Pellentesque Bibendum Fermentum</h4>
-          <p>
-            Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue...
-          </p>
-          <br>
-          <a class="b" href="">Saiba Mais</a>
-        </li>
+        {% for post in site.posts %}
+          <li>
+            <h4>{{ post.title }}</h4>
+            <p>
+              {{ post.excerpt }}
+            </p>
+            <br>
+            <a class="b" href="{{ post.url }}">Saiba Mais</a>
+          </li>
+        {% endfor %}
       </ul>
     </article>
 
