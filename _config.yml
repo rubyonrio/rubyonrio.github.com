@@ -1,3 +1,4 @@
 name: Ruby on Rio
 timezone: America/Sao_Paulo
 pygments: true
+permalink: /blog/:year/:month/:day/:title
