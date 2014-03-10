@@ -5,38 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
-
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
-
-    <!--  Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="centralized">
-        <a href="/">
-          <img src="/img/logo.png" width="150"/>
-        </a>
-      </di>
+      <div class="containner">
+        <h1>
+          <a href="/" title="Ruby on Rio">
+            <img class="logo" src="/img/logo.png" alt="Ruby on Rio">
+          </a>
+        </h1>
+        <nav>
+          <a href="">Nosso Blog</a>
+          <a href="https://groups.google.com/forum/#!forum/rubyonrio">Lista de Discussão</a>
+        </nav>
+      </div>
     </header>
 
     {{ content }}
 
-    <footer class="centralized">
-      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
-        <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
-        <br />Ruby on Rio 2013 sob,
-        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
-          Creative Commons Attribution 3.0 Unported License
-        </a>.
+    <footer>
+      <div class="containner">
+        <div class="copy">
+          <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
+            <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+            <br /><br>Ruby on Rio 2013 sob,
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
+              Creative Commons Attribution 3.0 Unported License
+            </a>.
+        </div>
+        <div class="support">
+          <a href="http://www.helabs.com.br">
+            <img src="/img/helabs-logo.png">
+          </a>
+          <p>Apoiando o Ruby on Rio com muito carinho.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

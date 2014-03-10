@@ -2,77 +2,105 @@
 layout: default
 title: Ruby on Rio
 
-address: DTM - Travessa do Ouvidor, 17 - 501, Centro, Rio de Janeiro
-events:
+event_address: DTM - Travessa do Ouvidor, 17/501, Centro, Rio de Janeiro
+event_hours: 13:00 às 18:00
+next_event:
+  day: Sábado, 15 de Fevereiro de 2014
+futute_events:
   -
-    day: 15
-    month: Fevereiro
-    status: "next"
+    day: "Sábado, 15 de Março de 2014"
   -
-    day: 15
-    month: Março
-    status: "future"
+    day: "Sábado, 19 de Abril de 2014"
   -
-    day: 19
-    month: Abril
-    status: "future"
+    day: Sábado, 17 de Maio de 2014
   -
-    day: 17
-    month: Maio
-    status: "future"
+    day: Sábado, 21 de Junho de 2014
   -
-    day: 21
-    month: Junho
-    status: "future"
+    day: Sábado, 19 de Julho de 2014
   -
-    day: 19
-    month: Julho
-    status: "future"
+    day: Sábado, 20 de Setembro de 2014
   -
-    day: 20
-    month: Setembro
-    status: "future"
+    day: Sábado, 18 de Outubro de 2014
   -
-    day: 18
-    month: Outubro
-    status: "future"
-  -
-    day: 20
-    month: Dezembro
-    status: "future"
+    day: Sábado, 20 de dezembro de 2014
 ---
 
+<div class="containner">
+  <div class="hero">
+    <section class="intro">
+      <h2>Bem vindo ao site <br>do grupo Ruby on Rio.</h2>
+    </section>
 
-<section class="centralized">
-  <article class="next-meetup">
-    <h2>Próximo Encontro: </h2>
-    <p><i class="icon-map-marker icon-white"></i>{{ page.address }}</p>
-    {% for event in page.events %}
-      {% if event.status == "next" %}
-        <p><i class="icon-time icon-white"></i>Sábado, {{ event.day }} de {{ event.month }} de 2014  às 13:00 ~ 18:00</p>
-      {% endif %}
-    {% endfor %}
-  </article>
+    <article class="next-meetup">
+      <div class="title"><h2>Próximo Encontro</h2></div>
+      <div class="schedule">
+        <i class="fa fa-calendar-o"></i>
+        <p>{{ page.next_event.day }}</p>
+        <i class="fa fa-clock-o"></i>
+        <p>{{ page.event_hours }}<p>
+        <i class="fa fa-map-marker"></i>
+        <p>{{ page.event_address }}</p>
+      </div>
+    </article>
+  </div>
+</div>
 
-  <article class="about">
-    <h2>Bem vindo ao site do Ruby on Rio</h2>
+<div class="containner">
+  <section class="infos">
+    <article class="about-group">
+      <h3>Sobre o Grupo</h3>
+      <br>
+      <p>
+        O Ruby on Rio é o grupo de usuários de Ruby do Rio de Janeiro. O grupo nasceu como forma de unir desenvolvedores e pessoas interessadas na linguagem de programação Ruby.
+      </p>
+      <p>
+        No grupo falamos sobre Ruby, Rails e outras tecnologias relacionadas. O grupo funciona como um meio para aproximar pessoas para de troca de conhecimento, seja para aprender ou ensinar Ruby e seu vasto ecossistema de frameworks, bibliotecas e aplicações.
+      </p>
+      <br>
+    </article>
 
-    <p>O Ruby on Rio é o grupo de usuários de Ruby do Rio de Janeiro. O grupo nasceu como forma de unir desenvolvedores e pessoas interessadas na linguagem de programação Ruby.</p>
-    <p>No grupo falamos sobre Ruby, Rails e outras tecnologias relacionadas. O grupo funciona como um meio para aproximar pessoas para de troca de conhecimento, seja para aprender ou ensinar Ruby e seu vasto ecossistema de frameworks, bibliotecas e aplicações.</p>
+    <aside class="about-meetings">
+      <p>Realizamos encontros presencias mensalmente. Nesses encontros, fazemos apresentações, codificamos aplicações e projetos open source, regamos a muito bate papo sobre Ruby e outras tecnologias.</p>
+      <p>Para acompanhar o que acontece na Ruby on Rio,</p>
+      <a class="b" href="https://groups.google.com/forum/#!forum/rubyonrio">Faça parte da lista de discussão</a>
+    </aside>
+  </section>
+</div>
 
-    <h2>Encontros presenciais</h2>
-    <p>Realizamos encontros presencias mensalmente. Nesses encontros, fazemos apresentações, codificamos aplicações e projetos open source, regamos a muito bate papo sobre Ruby e outras tecnologias.</p>
-    <p>Para acompanhar o que acontece na Ruby on Rio, <a href="https://groups.google.com/forum/?fromgroupsrubyonrio#!forum/rubyonrio">faça parte da lista de discução</a>.</p>
-  </article>
+<div class="avatars"></div>
 
-  <article class="next-meetup">
-    <h2>Encontros futuros: </h2>
-    <p><i class="icon-map-marker icon-white"></i>{{ page.address }}</p>
-    {% for event in page.events %}
-      {% if event.status == "future" %}
-        <p><i class="icon-time icon-white"></i>Sábado, {{ event.day }} de {{ event.month }} de 2014  às 13:00 ~ 18:00</p>
-        {% endif %}
-    {% endfor %}
-  </article>
+<div class="containner">
+  <section class="meetings">
+    <article class="last-meetings">
+      <h3>Últimos Encontros</h3>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <h4>{{ post.title }}</h4>
+            <p>
+              {{ post.excerpt }}
+            </p>
+            <br>
+            <a class="b" href="{{ post.url }}">Saiba Mais</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </article>
 
-</section>
+    <aside class="next-meetings">
+      <h3>Encontros Futuros</h3>
+      <ul>
+        {% for event in page.futute_events limit:3 %}
+        <li>
+          <i class="fa fa-calendar-o"></i>
+          <p>{{ event.day }}</p>
+          <i class="fa fa-clock-o"></i>
+          <p>{{ page.event_hours }}<p>
+          <i class="fa fa-map-marker"></i>
+          <p>{{ page.event_address }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </aside>
+  </section>
+</div>
