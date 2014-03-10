@@ -28,6 +28,8 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Raleway', sans-serif; }
 
 p { margin:0 0 20px 0; }
 
+a { color: #ff3333; }
+
 a.b {
   padding: 10px 35px 10px;
   background: #ff3333;
@@ -205,6 +207,27 @@ section.infos {
     }
   }
 }
+
+section.post {
+  margin-top: 60px;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 2px solid #e8e8e8;
+  border-radius: 3px;
+
+  h3 {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #ff3333;
+  }
+
+  p {
+    font-size: 1.3em;
+    line-height: 1.9em;
+  }
+}
+
 
 .avatars {
   margin-top: 70px;
