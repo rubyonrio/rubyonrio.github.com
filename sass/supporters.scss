@@ -1,0 +1,37 @@
+.supporters {
+  min-height: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .current {
+    margin: 40px 0;
+  }
+
+  .formers {
+    margin: 40px 0;
+  }
+}
+
+.support {
+  display: inline-block;
+  width: 200px;
+  height: 150px;
+  line-height: 190px;
+  vertical-align: top;
+  text-align: center;
+  border: 1px solid #eee;
+  margin: 16px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
