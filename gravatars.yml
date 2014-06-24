@@ -1,25 +1,50 @@
 gravatars:
-  -
-    hash: 'de89dceb54a28b2aa952663cc94d60fc'
-  -
-    hash: 'cd0c263b28fce0e1d89a0002cc75648b'
-  -
-    hash: '9742692d8f4eb9997301de35395e5460'
-  -
-    hash: 'edd66843155ff2ee51f72b2d5487abea'
-  -
-    hash: 'fddaed58a38748afdcd90bf7f0e02e17'
-  -
-    hash: '8f9968630845dc22fffdb581c54324e8'
-  -
-    hash: '0c55140c23bc76e128764feac26edb71'
-  -
-    hash: 'b5213ca6d34dc9e13a8ef265d1835116'
-  -
-    hash: 'de89dceb54a28b2aa952663cc94d60fc'
-  -
-    hash: '4bf6b0cbd28f97183a2490671e257abf'
-  -
-    hash: '06e4c84000579d88c9298a6616a42e29'
-  -
-    hash: '9af091720396af75791d4f7187fca39e'
+  gravatar:
+    name:   'Rodrigo Pinto'
+    github: 'rodrigopinto'
+    hash:   'de89dceb54a28b2aa952663cc94d60fc'
+  gravatar:
+    name:   'Raphael de Almeida'
+    github: 'raphaeldealmeida'
+    hash:   'cd0c263b28fce0e1d89a0002cc75648b'
+  gravatar:
+    name:   'Celestino Gomes'
+    github: 'tinogomes'
+    hash:   '9742692d8f4eb9997301de35395e5460'
+  gravatar:
+    name:   'Jonathan Calixto'
+    github: 'jonathanccalixto'
+    hash:   'edd66843155ff2ee51f72b2d5487abea'
+  gravatar:
+    name:   'Vitor Pellegrino'
+    github: 'pellegrino'
+    hash:   'fddaed58a38748afdcd90bf7f0e02e17'
+  gravatar:
+    name:   'Raphael Tauil'
+    github: 'tauil'
+    hash:   '8f9968630845dc22fffdb581c54324e8'
+  gravatar:
+    name:   'Vinícius Sales'
+    github: 'viniciussbs'
+    hash:   '0c55140c23bc76e128764feac26edb71'
+  gravatar:
+    name:   'Euclides Fernandes'
+    github: 'ecdfernandes'
+    hash:   'b5213ca6d34dc9e13a8ef265d1835116'
+  gravatar:
+    name:   'Vagner Zampieri'
+    github: 'vagnerzampieri'
+    hash:   'de89dceb54a28b2aa952663cc94d60fc'
+  gravatar:
+    name:   'Frederico Porto'
+    github: ''
+    hash:   '4bf6b0cbd28f97183a2490671e257abf'
+  gravatar:
+    name:   'Carlos Figueiredo'
+    github: 'cefigueiredo'
+    hash:   '06e4c84000579d88c9298a6616a42e29'
+  gravatar:
+    name:   'Luciano Sousa'
+    github: 'lucianosousa'
+    hash:   '9af091720396af75791d4f7187fca39e'
+
