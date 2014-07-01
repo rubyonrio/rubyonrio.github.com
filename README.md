@@ -32,4 +32,4 @@ O arquivo css a ser alterado é o `sass/main.scss` e para as alterações serem 
 	$ compass compile
 
 
-Para entender melhor o jekyll, [acesse aqui](htpp://jekyllrb.com).
+Para entender melhor o jekyll, [acesse aqui](http://jekyllrb.com).
