@@ -5,8 +5,10 @@ title: Ruby on Rio
 event_address: 'DTM: Travessa do Ouvidor, 17 - 501'
 event_hours: '19h - 22h'
 next_event:
-    day: "7 de Março 2016"
-futute_events:
+    day: Segunda-feira, 7 de Março de 2016
+future_events:
+  -
+    day: Segunda-feira, 14 de Março de 2016
 ---
 
 <div class="containner">
@@ -56,7 +58,7 @@ futute_events:
 <div class="containner">
   <section class="meetings">
     <article class="last-meetings">
-      <h3>Últimos Encontros</h3>
+      <h3>Sobre os encontros</h3>
       <ul>
         {% for post in site.posts %}
           <li>
@@ -74,7 +76,7 @@ futute_events:
     <aside class="next-meetings">
       <h3>Encontros Futuros</h3>
       <ul>
-        {% for event in page.futute_events limit:3 %}
+        {% for event in page.future_events limit:3 %}
         <li>
           <i class="fa fa-calendar-o"></i>
           <p>{{ event.day }}</p>
