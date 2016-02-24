@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "We're back! Encontro em março!"
+date:   2016-02-24 15:40:00
+categories:
+  - encontros
+---
+
+Galera querida, os eventos voltam com a corda toda. Quem quiser falar sobre algum assunto no evento, submeta uma proposta através do [Call4paperz do evento][1].
+
+Data e Local:
+Março, dia 7, 19h. Centro do Rio, DTM: Travessa do Ouvidor, 17 - 501
+
+Apresente sua proposta no link aí de cima e vamos que vamos!
+
+Nos vemos lá.
+
+[1]: http://call4paperz.com/events/encontro-ruby-on-rio-marco-2016
