@@ -52,7 +52,7 @@ Falamos sobre o [Code Climate][24], a versão semelhante dele, porém open sourc
 
 ## Livros recomendados
 
-[Clean code][] e [Confident ruby][]
+[Clean code][28] e [Confident ruby][29]
 
 [1]: https://twitter.com/lucianosousa
 [2]: http://call4paperz.com/events/encontro-ruby-on-rio-marco-2016/proposals/2182
@@ -81,3 +81,5 @@ Falamos sobre o [Code Climate][24], a versão semelhante dele, porém open sourc
 [25]: https://github.com/metricfu/metric_fu
 [26]: https://en.wikipedia.org/wiki/Code_smell
 [27]: https://github.com/troessner/reek
+[28]: https://books.google.com.br/books/about/Clean_Code.html?id=dwSfGQAACAAJ&redir_esc=y
+[29]: http://www.confidentruby.com/
