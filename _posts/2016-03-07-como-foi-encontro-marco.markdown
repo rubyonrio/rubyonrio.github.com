@@ -54,6 +54,11 @@ Falamos sobre o [Code Climate][24], a versão semelhante dele, porém open sourc
 
 [Clean code][28] e [Confident ruby][29]
 
+Até a próxima!
+
+Abraços,
+[Rafael B. Tauil][30]
+
 [1]: https://twitter.com/lucianosousa
 [2]: http://call4paperz.com/events/encontro-ruby-on-rio-marco-2016/proposals/2182
 [3]: http://ruby-performance-book.com/blog/2016/02/is-ruby-2-3-faster-rails-erb-template-rendering-performance.html
@@ -83,3 +88,4 @@ Falamos sobre o [Code Climate][24], a versão semelhante dele, porém open sourc
 [27]: https://github.com/troessner/reek
 [28]: https://books.google.com.br/books/about/Clean_Code.html?id=dwSfGQAACAAJ&redir_esc=y
 [29]: http://www.confidentruby.com/
+[30]: https://twitter.com/tauil
