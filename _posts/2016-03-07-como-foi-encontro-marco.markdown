@@ -20,7 +20,7 @@ Seguindo com o relato, o Jonathan perguntou se existia alguma forma melhor de us
 
 ## Algumas gems para análise de performance
 
-Voltando com o tema de performance, vimos algumas gems que fazem análise e mostram o que pode ser melhorado no código, como a [fasterer gem][7], a `fast-ruby`, [ruby-prof][8], [stack-prof][9] e [stack-prof][15].
+Voltando com o tema de performance, vimos algumas gems que fazem análise e mostram o que pode ser melhorado no código, como a [fasterer gem][7], a `fast-ruby`, [ruby-prof][8] e [stack-prof][9].
 
 ## Palestra da Eileen Uchitelle na GURUCO 2015
 
@@ -73,7 +73,7 @@ Abraços,
 [12]: https://speakerdeck.com/eileencodes/rubyconf-2015-how-to-performance
 [13]: https://basecamp.com/about
 [14]: https://basecamp.com/3/features
-[15]: https://github.com/tmm1/stackprof
+[15]: https://none
 [16]: https://twitter.com/vagnerzampieri
 [17]: https://github.com/rails/arel
 [18]: http://www.myfinance.com.br/
