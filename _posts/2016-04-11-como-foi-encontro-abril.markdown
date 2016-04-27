@@ -35,6 +35,7 @@ No final do encontro, conversando sobre ideias e pedindo sugestões de temas par
 Até a próxima!
 
 Abraços,
+
 [Rafael B. Tauil][1]
 
 [1]: https://twitter.com/tauil
