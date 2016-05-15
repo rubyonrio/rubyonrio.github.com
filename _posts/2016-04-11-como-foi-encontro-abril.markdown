@@ -28,7 +28,7 @@ Não lembro ao certo agora, mas pelas minhas anotações vi que também foi fala
 
 E pra não perder a piada algum engraçadinho lembrou da [maior aplicação monolítica em Rails][24] e que é bem performatico ([tem video também][27]). Trata-se de um site de [Receitas][28] e que "basicamente" a solução para escalar a aplicação foi subir um monte de servidor nos horarios de pico! Foi uma descrição simplória minha. Assistam o video que vale a pena!
 
-Fechando sua participação, André comentou sobre um post que viu do Fábio Akita sobre [o fim do ruby][26] e recomendou um livro que ainda não consegui pegar o nome correto, mas atualizarei o post assim que conseguir.
+Fechando sua participação, André comentou sobre um post que viu do Fábio Akita sobre [o fim do ruby][26] e recomendou ~~~um livro que ainda não consegui pegar o nome correto, mas atualizarei o post assim que conseguir~~~ [essa palestra do Joshua Kerievsky][29].
 
 No final do encontro, conversando sobre ideias e pedindo sugestões de temas para os próximos encontros, comentei sobre uma ideia maluca que me ocorreu referente ao tema de performance. Basicamente seria uma "luta" entre aplicações. Ambas deveria mandar requests e responder aos requests o mais rápido possível e esses requests iriam aumentando até que uma dessas aplicações não aguentasse mais responder e perderia o desafio. É claro que tem muitas lacunas sobre como fazer isso acontecer e como julgar. Talvez teria que ter um outra aplicação escutando os dois, não sei. Só uma ideia que me ocorreu na hora. Também sugeri um uso alternativo no Call4paperz de modo a nos ajudar para os próximos enconros. Ao invés de inscrever as propostas quer falar, seria a inscrição de quais temas gostaria de ouvir.
 
@@ -66,3 +66,4 @@ Abraços,
 [26]: https://www.quora.com/What-happened-to-the-Ruby-community-Where-did-everybody-go/answer/Fabio-Akita?share=c45443c0
 [27]: https://www.youtube.com/watch?v=naTRzjHaIhE
 [28]: https://cookpad.com/br?via=jp
+[29]: http://www.infoq.com/interviews/anzen
