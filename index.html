@@ -3,12 +3,14 @@ layout: default
 title: Ruby on Rio
 
 event_address: 'DTM: Travessa do Ouvidor, 17 - 501'
-event_hours: '19h - 22h'
+event_hours: '14h - 18h'
+link_for_submission: 'http://call4paperz.com/events/rubyonrio-julho'
 next_event:
-    day: Segunda-feira, 13 de Março de 2017
+    day: Sábado, 15 de Julho de 2017
 future_events:
   -
-    day: Segunda-feira, 10 de Abril de 2017
+    day: Sábado, 15 de Julho de 2017
+    link_for_submission: 'http://call4paperz.com/events/rubyonrio-julho'
 ---
 
 <div class="containner">
@@ -26,6 +28,12 @@ future_events:
         <p>{{ page.event_hours }}<p>
         <i class="fa fa-map-marker"></i>
         <p>{{ page.event_address }}</p>
+        <i class="fa fa-paper-plane-o"></i>
+        <p>
+          <a target='_blank' href='{{ page.link_for_submission }}'>
+            Submeta sua palestra!
+          </a>
+        </p>
       </div>
     </article>
   </div>
@@ -49,6 +57,7 @@ future_events:
       <p>Realizamos encontros presencias mensalmente. Nesses encontros, fazemos apresentações, codificamos aplicações e projetos open source, regamos a muito bate papo sobre Ruby e outras tecnologias.</p>
       <p>Para acompanhar o que acontece na Ruby on Rio,</p>
       <a class="b" href="https://groups.google.com/forum/#!forum/rubyonrio" target="_blank">Faça parte da lista de discussão</a>
+      <a class="b" href="https://telegram.me/joinchat/BHHBuj9mw2_r7L3qKdxnCA" target="_blank">Entre no nosso grupo do Telegram</a>
     </aside>
   </section>
 </div>
@@ -84,6 +93,14 @@ future_events:
           <p>{{ page.event_hours }}<p>
           <i class="fa fa-map-marker"></i>
           <p>{{ page.event_address }}</p>
+          {% if event.link_for_submission %}
+          <i class="fa fa-paper-plane"></i>
+          <p>
+            <a target='_blank' href='{{ event.link_for_submission }}'>
+              Submeta sua palestra!
+            </a>
+          </p>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
