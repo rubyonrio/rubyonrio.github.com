@@ -154,6 +154,10 @@ header {
         line-height: 1.6em;
         margin-bottom: 20px;
       }
+
+      a {
+        color: #fff;
+      }
     }
   }
 }
@@ -161,7 +165,6 @@ header {
 section.infos {
   overflow: auto;
   margin-top: 60px;
-  height: 370px;
 
   h3 {
     font-size: 2em;
@@ -339,4 +342,3 @@ footer {
     p { margin-top: 10px; }
   }
 }
-
