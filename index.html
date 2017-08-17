@@ -2,15 +2,12 @@
 layout: default
 title: Ruby on Rio
 
-event_address: 'DTM: Travessa do Ouvidor, 17 - 501'
-event_hours: '10h'
-link_for_submission: 'http://call4paperz.com/events/rubyonrio-julho'
-next_event:
-    day: Sábado, 15 de Julho de 2017
 future_events:
-  -
-    day: Sábado, 15 de Julho de 2017
-    link_for_submission: 'http://call4paperz.com/events/rubyonrio-julho'
+  - day: Sábado, 26 de Agosto de 2017
+    event_hours: '10h30'
+    event_address: 'DTM: Travessa do Ouvidor, 17 - 501'
+    link_for_submission: 'http://call4paperz.com/events/rubyonrio-agosto'
+    meetup: 'https://www.meetup.com/pt-BR/RubyOnRio/events/242336917/'
 ---
 
 <div class="containner">
@@ -22,18 +19,30 @@ future_events:
     <article class="next-meetup">
       <div class="title"><h2>Próximo Encontro</h2></div>
       <div class="schedule">
-        <i class="fa fa-calendar-o"></i>
-        <p>{{ page.next_event.day }}</p>
-        <i class="fa fa-clock-o"></i>
-        <p>{{ page.event_hours }}<p>
-        <i class="fa fa-map-marker"></i>
-        <p>{{ page.event_address }}</p>
-        <i class="fa fa-paper-plane-o"></i>
-        <p>
-          <a target='_blank' href='{{ page.link_for_submission }}'>
-            Submeta sua palestra!
-          </a>
-        </p>
+        {% for event in page.future_events limit:1 %}
+          <i class="fa fa-calendar-o"></i>
+          <p>{{ event.day }}</p>
+          <i class="fa fa-clock-o"></i>
+          <p>{{ event.event_hours }}<p>
+          <i class="fa fa-map-marker"></i>
+          <p>{{ event.event_address }}</p>
+          {% if event.link_for_submission %}
+          <i class="fa fa-paper-plane-o"></i>
+          <p>
+            <a target='_blank' href='{{ event.link_for_submission }}'>
+              Submeta sua palestra!
+            </a>
+          </p>
+          {% endif %}
+          {% if event.meetup %}
+          <i class="fa fa-meetup"></i>
+          <p>
+            <a target='_blank' href='{{ event.meetup }}'>
+              Confirme no Meetup!
+            </a>
+          </p>
+          {% endif %}
+        {% endfor %}
       </div>
     </article>
   </div>
@@ -90,14 +99,22 @@ future_events:
           <i class="fa fa-calendar-o"></i>
           <p>{{ event.day }}</p>
           <i class="fa fa-clock-o"></i>
-          <p>{{ page.event_hours }}<p>
+          <p>{{ event.event_hours }}<p>
           <i class="fa fa-map-marker"></i>
-          <p>{{ page.event_address }}</p>
+          <p>{{ event.event_address }}</p>
           {% if event.link_for_submission %}
           <i class="fa fa-paper-plane"></i>
           <p>
             <a target='_blank' href='{{ event.link_for_submission }}'>
               Submeta sua palestra!
+            </a>
+          </p>
+          {% endif %}
+          {% if event.meetup %}
+          <i class="fa fa-meetup"></i>
+          <p>
+            <a target='_blank' href='{{ event.meetup }}'>
+              Confirme no Meetup!
             </a>
           </p>
           {% endif %}

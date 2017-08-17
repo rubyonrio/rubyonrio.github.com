@@ -142,5 +142,8 @@ DEPENDENCIES
   github-pages (= 51)
   sass (= 3.4.21)
 
+RUBY VERSION
+   ruby 2.3.0p0
+
 BUNDLED WITH
-   1.11.2
+   1.15.3

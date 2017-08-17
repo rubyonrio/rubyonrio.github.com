@@ -25,7 +25,7 @@ Após finalizar a instalação, execute o jekyll para ver o website rodando:
 
 Após o jekyll inicializar acesse no browser a url a seguir:
 
-    http:://localhost:4000
+    http://localhost:4000
 
 O arquivo css a ser alterado é o `sass/main.scss` e para as alterações serem compiladas, basta executar:
 
