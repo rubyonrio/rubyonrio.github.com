@@ -1,0 +1,15 @@
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  .image-thumb {
+    width: 310px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 206px;
+
+    img {
+    width: 95%;
+    }
+  }
+}
