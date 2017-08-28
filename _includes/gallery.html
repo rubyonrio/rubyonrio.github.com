@@ -1,0 +1,11 @@
+<div class="image-gallery">
+  {% for image in site.static_files %}
+    {% if image.path contains include.thumb_path  %}
+      <div class="image-thumb">
+        <a href="{{ image.path | remove: 'thumb/' }}" data-fancybox="{{include.gallery_name}}">
+          <img src="{{ image.path }}" alt="{{ image.name }}">
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
