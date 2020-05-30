@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '2.3.0'
+ruby '2.7.0'
 
 gem 'github-pages', '51'
 gem 'sass',         '3.4.21'
