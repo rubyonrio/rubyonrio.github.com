@@ -20,7 +20,7 @@ Execute o bundle no seu diretório para instalar as dependências:
 
 Após finalizar a instalação, execute o jekyll para ver o website rodando:
 
-	$ jekyll serve
+	$ bundle exec jekyll serve
 
 
 Após o jekyll inicializar acesse no browser a url a seguir:
