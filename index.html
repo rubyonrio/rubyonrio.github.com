@@ -3,11 +3,11 @@ layout: default
 title: Ruby on Rio
 
 future_events:
-  - day: Quinta, 23 de Julho de 2020
+  - day: Terça, 22 de Novembro de 2022
     event_hours: '19h00'
-    event_address: 'Remoto: https://meet.google.com/tet-yajs-mcv'
-    link_for_submission:
-    meetup: 'https://www.meetup.com/RubyOnRio/events/272014804'
+    event_address: 'Beep Saúde: Praia de Botafogo, 501 - Botafogo. Rio de Janeiro, RJ'
+    meetup: 'https://www.meetup.com/pt-BR/rubyonrio/events/289654742/'
+    submission_form: 'https://forms.gle/qAhjNbzz1YTvaH818'
 ---
 
 <div class="containner">
@@ -34,11 +34,24 @@ future_events:
             </a>
           </p>
           {% endif %}
+          {% if event.submission_form %}
+          <i class="fa fa-user-plus"></i>
+          <p>
+            <a target='_blank' href='{{ event.submission_form }}'>
+              Se inscreva!
+            </a>
+          </p>
+          {% endif %}
           {% if event.meetup %}
           <i class="fa fa-meetup"></i>
           <p>
             <a target='_blank' href='{{ event.meetup }}'>
-              Confirme no Meetup!
+              {% if event.submission_form %}
+              Confira
+              {% else %}
+              Confirme
+              {% endif %}
+              no Meetup!
             </a>
           </p>
           {% endif %}
