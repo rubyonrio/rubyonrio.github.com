@@ -140,6 +140,7 @@ header {
     .schedule {
       width: 70%;
       margin: 80px auto 0;
+      font-weight: bold;
 
       i.fa {
         float: left;
@@ -308,6 +309,8 @@ section.meetings{
           margin-bottom: 15px;
           color: #747474;
           font-size: 1.15em;
+          font-weight: bold;
+          text-shadow: 1px 1px #ddd;
         }
       }
 
