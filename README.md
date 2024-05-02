@@ -1,11 +1,11 @@
 # Ruby on Rio
 
-Website do Ruby on Rio - [rubyonrio.github.io](http://rubyonrio.github.io)
+Website do Ruby on Rio, destinado a divulgação de eventos e meetups para toda a comunidade do Rio de Janeiro - [rubyonrio.github.io](http://rubyonrio.github.io).
 
 ## Contribuindo
 
 1. Faça um Fork.
-2. Configure seu ambiente de desenvolvimento, como mencionado na seção(Configurando o ambiente de desenvolvimento).
+2. Configure seu ambiente de desenvolvimento, como mencionado na seção (Configurando o ambiente de desenvolvimento).
 4. Crie um branch (`git checkout -b my-branch`)
 5. Commit suas alterações (`git commit -am 'Adicionando alguma coisa'`)
 6. Envie seu branch para o repositório do github (`git push origin my-branch`)
@@ -13,6 +13,14 @@ Website do Ruby on Rio - [rubyonrio.github.io](http://rubyonrio.github.io)
 
 ## Configurando o ambiente de desenvolvimento
 
+Verifique se a versão do ruby é a `2.7.0`:
+	
+	$ ruby -v
+
+Senão, instale-a usando uma das opções:
+ - rbenv
+ - asdf (plugin ruby)
+ - rvm
 
 Execute o bundle no seu diretório para instalar as dependências:
 
