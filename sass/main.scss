@@ -53,8 +53,10 @@ a.b {
 }
 
 .containner {
-  width: 980px;
+  max-width: 980px;
+  width: 100%;
   margin: auto;
+  padding: 0 15px;
 }
 
 
@@ -64,7 +66,7 @@ a.b {
 header {
   overflow: auto;
   background: #fff;
-  height: 80px;
+  min-height: 80px;
   border-bottom: 1px solid #e8e8e8;
 
   .logo {
@@ -374,5 +376,159 @@ footer {
 
     img { margin-right: 50px; }
     p { margin-top: 10px; }
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 10px 0;
+
+    .containner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      float: none;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      float: none;
+      margin: 0;
+      text-align: center;
+
+      a {
+        margin: 0 8px;
+        font-size: 1em;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .hero {
+    margin-top: 20px;
+
+    section.intro, article.next-meetup {
+      height: auto;
+      float: none;
+      width: 100%;
+    }
+
+    section.intro {
+      padding: 30px 20px;
+
+      h2 {
+        padding-top: 20px;
+        font-size: 2.2em;
+        line-height: 1.4em;
+      }
+    }
+
+    article.next-meetup {
+      border-left: none;
+      border-top: 1px solid #F02424;
+      padding: 20px 0;
+
+      .title h2 {
+        width: 100%;
+        float: none;
+        border-radius: 0;
+      }
+
+      .schedule {
+        width: 85%;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  section.infos {
+    margin-top: 30px;
+
+    article.about-group {
+      width: 100%;
+      float: none;
+      padding: 0 10px;
+
+      p { width: 100%; }
+    }
+
+    aside.about-meetings {
+      width: 100%;
+      float: none;
+      margin-top: 30px;
+    }
+  }
+
+  .contributors {
+    margin-top: 40px;
+    padding: 20px 10px;
+    gap: 10px;
+
+    a {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  section.meetings {
+    margin-top: 30px;
+    padding-bottom: 50px;
+
+    article.last-meetings {
+      float: none;
+      width: 100%;
+      padding: 20px 0;
+
+      ul li {
+        margin-bottom: 40px;
+
+        p { width: 100%; }
+      }
+    }
+
+    aside.next-meetings {
+      float: none;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  footer {
+    .copy {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    .support {
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin-top: 20px;
+
+      img { margin-right: 0; }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero section.intro h2 {
+    font-size: 1.8em;
+  }
+
+  header nav a {
+    font-size: 0.9em;
+    margin: 0 5px 5px;
+  }
+
+  .contributors a {
+    width: 50px;
+    height: 50px;
   }
 }

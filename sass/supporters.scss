@@ -35,3 +35,21 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  .supporters {
+    text-align: center;
+  }
+
+  .support {
+    width: 140px;
+    height: 110px;
+    line-height: 140px;
+    margin: 8px;
+
+    img {
+      max-width: 100px;
+      height: auto;
+    }
+  }
+}

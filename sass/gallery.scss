@@ -13,3 +13,12 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .image-gallery .image-thumb {
+    width: 100%;
+    height: auto;
+
+    img { width: 100%; }
+  }
+}
