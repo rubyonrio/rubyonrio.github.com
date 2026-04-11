@@ -1,7 +1,7 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-ruby '2.7.0'
+ruby '3.4.7'
 
-gem 'github-pages'
-gem 'sass-rails'
-gem 'compass-rails'
+gem 'github-pages', '~> 228', group: :jekyll_plugins
+gem 'webrick'
+gem 'csv'
