@@ -2,12 +2,7 @@
 layout: default
 title: Ruby on Rio
 
-future_events:
-  - day: Sexta, 03 de Maio de 2024
-    event_hours: '19h00'
-    event_address: 'Le Wagon: Rua Visconde de Pirajá, 142 - Ipanema. Rio de Janeiro, RJ'
-    # meetup: 'https://www.meetup.com/pt-BR/rubyonrio/events/289654742/'
-    # submission_form: 'https://forms.gle/qAhjNbzz1YTvaH818'
+future_events: []
 ---
 
 <div class="containner">
@@ -16,6 +11,7 @@ future_events:
       <h2>Bem vindo ao site <br>do grupo Ruby on Rio.</h2>
     </section>
 
+    {% if page.future_events.size > 0 %}
     <article class="next-meetup">
       <div class="title"><h2>Próximo Encontro</h2></div>
       <div class="schedule">
@@ -34,30 +30,10 @@ future_events:
             </a>
           </p>
           {% endif %}
-          <!-- {% if event.submission_form %}
-          <i class="fa fa-user-plus"></i>
-          <p>
-            <a target='_blank' href='{{ event.submission_form }}'>
-              Se inscreva!
-            </a>
-          </p>
-          {% endif %}
-          {% if event.meetup %}
-          <i class="fa fa-meetup"></i>
-          <p>
-            <a target='_blank' href='{{ event.meetup }}'>
-              {% if event.submission_form %}
-              Confira
-              {% else %}
-              Confirme
-              {% endif %}
-              no Meetup!
-            </a>
-          </p>
-          {% endif %} -->
         {% endfor %}
       </div>
     </article>
+    {% endif %}
   </div>
 </div>
 
@@ -213,6 +189,7 @@ future_events:
       </ul>
     </article>
 
+    {% if page.future_events.size > 0 %}
     <aside class="next-meetings">
       <h3>Encontros Futuros</h3>
       <ul>
@@ -244,5 +221,6 @@ future_events:
         {% endfor %}
       </ul>
     </aside>
+    {% endif %}
   </section>
 </div>
